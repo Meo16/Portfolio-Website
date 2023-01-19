@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="htmlThankYou" lang="en">
+
+<head>
+    <meta http-equiv="refresh" content="5;url=http://localhost:52330/index.html" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/4a5897f748.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+</head>
+
+<body>
+    <div class="thankyouContainer">
+        <h1 class="thankyouHeader"><span>Dankjewel!</span><br>je mail is ontvangen!<br></h1>
+        <p class="redirectMessage">Je wordt over <span id="redirectCounter">5 s</span> teruggestuurd.</p>
+    </div>
+</body>
+<script>
+    let maxTime = 4;
+    let counter = setInterval(function () {
+        document.getElementById("redirectCounter").innerHTML = maxTime + " s";
+        maxTime -= 1;
+    }, 1000);
+</script>
+
+</html>
